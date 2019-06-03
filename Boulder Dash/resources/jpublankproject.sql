@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
--- Client :  127.0.0.1
--- Généré le :  Jeu 02 Juin 2016 à 23:02
--- Version du serveur :  5.7.11
--- Version de PHP :  5.6.19
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  lun. 03 juin 2019 à 03:22
+-- Version du serveur :  5.7.24
+-- Version de PHP :  7.2.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,21 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `jpublankproject`
 --
-CREATE DATABASE `jpublankproject` ;
-
-USE `jpublankproject` ;
 
 DELIMITER $$
 --
 -- Procédures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `helloworldById` (IN `p_id` INT)  READS SQL DATA
-    SQL SECURITY INVOKER
-SELECT * FROM helloworld WHERE id = p_id$$
-
+DROP PROCEDURE IF EXISTS `HelloworldByCode`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `HelloworldByCode` (IN `p_code` VARCHAR(2))  READS SQL DATA
     SQL SECURITY INVOKER
 SELECT * FROM jpublankproject.helloworld where `code`=p_code$$
+
+DROP PROCEDURE IF EXISTS `helloworldById`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `helloworldById` (IN `p_id` INT)  READS SQL DATA
+    SQL SECURITY INVOKER
+SELECT * FROM helloworld WHERE id = p_id$$
 
 DELIMITER ;
 
@@ -43,14 +44,17 @@ DELIMITER ;
 -- Structure de la table `helloworld`
 --
 
-CREATE TABLE `helloworld` (
-  `id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `helloworld`;
+CREATE TABLE IF NOT EXISTS `helloworld` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(2) NOT NULL,
-  `message` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `message` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code_UNIQUE` (`code`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `helloworld`
+-- Déchargement des données de la table `helloworld`
 --
 
 INSERT INTO `helloworld` (`id`, `code`, `message`) VALUES
@@ -59,26 +63,30 @@ INSERT INTO `helloworld` (`id`, `code`, `message`) VALUES
 (3, 'DE', 'Hallo Welt'),
 (4, 'ID', 'Salamat pagi dunia');
 
---
--- Index pour les tables exportées
---
+-- --------------------------------------------------------
 
 --
--- Index pour la table `helloworld`
---
-ALTER TABLE `helloworld`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `code_UNIQUE` (`code`);
-
---
--- AUTO_INCREMENT pour les tables exportées
+-- Structure de la table `levels`
 --
 
+DROP TABLE IF EXISTS `levels`;
+CREATE TABLE IF NOT EXISTS `levels` (
+  `ID` text NOT NULL,
+  `AccesPath` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 --
--- AUTO_INCREMENT pour la table `helloworld`
+-- Déchargement des données de la table `levels`
 --
-ALTER TABLE `helloworld`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+INSERT INTO `levels` (`ID`, `AccesPath`) VALUES
+('1', '/res/levels/level01.xml'),
+('2', '/res/levels/level02.xml'),
+('3', '/res/levels/level03.xml'),
+('4', '/res/levels/level04.xml'),
+('5', '/res/levels/level05.xml');
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
