@@ -2,6 +2,8 @@ package view;
 
 import static org.junit.Assert.*;
 
+import javax.swing.JComboBox;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -38,7 +40,11 @@ public class MenuLevelSelectorTest {
 
 	@Test
 	public void testGetChoiceValue() {
-		
+		 JComboBox comboBoxSource = (JComboBox) e.getSource();
+	        this.choiceValue = (String) comboBoxSource.getSelectedItem();
+
+	        if(this.levelEditor != null) {
+	            this.levelEditor.menuLevelSelectorChanged(this);
 	}
 
 	@Test

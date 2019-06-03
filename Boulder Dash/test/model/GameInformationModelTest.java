@@ -9,6 +9,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class GameInformationModelTest {
+	
+	GameInformationModel b ;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -20,6 +22,7 @@ public class GameInformationModelTest {
 
 	@Before
 	public void setUp() throws Exception {
+		this.b = new GameInformationModel(10);
 	}
 
 	@After
@@ -28,7 +31,8 @@ public class GameInformationModelTest {
 
 	@Test
 	public void testGetScore() {
-		
+		int a = 0 ;
+		assertEquals(a,b.getScore());
 	}
 
 	@Test
