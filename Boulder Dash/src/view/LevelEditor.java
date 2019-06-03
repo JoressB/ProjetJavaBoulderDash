@@ -20,8 +20,8 @@ import java.util.Observer;
  *
  * Specifies the level editor view.
  *
- * @author      Colin Leverger <me@colinleverger.fr>
- * @since       2015-06-19
+ * @author      Fredy
+ * @since       2019-06-03
  */
 public class LevelEditor extends JFrame implements Observer {
     private LevelEditorGroundView fieldPanel;

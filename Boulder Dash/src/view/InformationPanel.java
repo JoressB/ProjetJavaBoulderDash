@@ -14,8 +14,8 @@ import model.Level;
  *
  * Information panel element.
  *
- * @author      Colin Leverger <me@colinleverger.fr>
- * @since       2015-06-20
+ * @author      Fredy
+ * @since       2019-06-03
  */
 public class InformationPanel extends JPanel implements Observer {
 	private Level level;

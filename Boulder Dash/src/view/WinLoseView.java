@@ -40,9 +40,9 @@ public class WinLoseView extends JFrame{
     	JTextArea help = new JTextArea();
     	help.setEditable(false);
     	if(winOrLose.equals("win"))
-	    	help.setText("YOU WIN THE GAME :-)");
+	    	help.setText("YOU WIN THE GAME ☺️");
     	else
-    		help.setText("YOU LOSE THE GAME :-( TRY AGAIN!");
+    		help.setText("YOU FAILED THE GAME 😌 ; TRY AGAIN !");
     	
         this.add(help);
     }

@@ -15,8 +15,8 @@ import view.MenuLevelSelector;
  *
  * Menu view
  *
- * @author      Valerian Saliou <valerian@valeriansaliou.name>
- * @since       2015-06-23
+ * @author       Joress BADIENGUISSA 
+ * @since       2019-06-03
  */
 public class MenuView extends JFrame {
 	private NavigationBetweenViewController navigationBetweenViewController;
