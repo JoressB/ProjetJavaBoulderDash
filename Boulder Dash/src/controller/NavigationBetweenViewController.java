@@ -31,7 +31,7 @@ public class NavigationBetweenViewController implements ActionListener {
 		this.audioLoad = new AudioLoad();
 
         // Play game music
-        this.getAudioLoadHelper().startMusic("game");
+        this.getAudioLoadHelper().startMusic("Boulder Dash 1984 Intro music eargasm");
 
 		// Creation of the first view
 		this.menuView = new MenuView(this);
