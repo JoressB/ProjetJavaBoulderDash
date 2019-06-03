@@ -9,7 +9,7 @@ import java.io.File;
  * Proceeds level save routine
  * Able to iterate on internal representation of a map and serialize it to XML
  *
- * @author      Joress BADIENGUISSA
+ * @author      Fredy MANFOUO
  * @since       25-05-2019
  */
 public class LevelRemove {

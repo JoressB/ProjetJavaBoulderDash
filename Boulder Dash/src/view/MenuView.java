@@ -15,7 +15,7 @@ import view.MenuLevelSelector;
  *
  * Menu view
  *
- *@author Darline MODJO
+ * @author		Joress BADIENGUISSA 
  * @since       2019-06-03
  */
 public class MenuView extends JFrame {

@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * Specifies the menu image
  *
- *@author Darline MODJO
+ * @author		Joress BADIENGUISSA 
  * @since       2015-06-23
  */
 public class MenuImage extends JPanel {

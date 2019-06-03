@@ -11,7 +11,7 @@ import javazoom.jl.player.FactoryRegistry;
  *
  * Sound bridge to the JLayer library.
  *
- * @author      Fredy
+ * @author      Joress BADIENGUISSA
  * @since       2019-06-03
  */
 public class SoundJLayerBridge extends PlaybackListener implements Runnable {

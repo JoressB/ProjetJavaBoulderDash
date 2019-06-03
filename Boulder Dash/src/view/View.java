@@ -12,7 +12,7 @@ import contract.IView;
 /**
  * The Class View.
  *
- *@author Darline MODJO
+ * @author	Joress BADIENGUISSA 
  */
 public final class View implements IView, Runnable {
 
