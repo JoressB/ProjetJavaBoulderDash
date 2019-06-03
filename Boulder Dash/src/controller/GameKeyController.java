@@ -15,8 +15,7 @@ import model.Level;
  *
  * Manages the key events controller.
  *
- * @author      Colin Leverger <me@colinleverger.fr>
- * @since       2019-06-19
+ * @author      Fredy MANFOUO
  */
 public class GameKeyController implements KeyListener {
 	private Level level;

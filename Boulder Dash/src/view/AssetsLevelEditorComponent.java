@@ -14,7 +14,7 @@ import view.LevelEditor;
  *
  * Information panel element.
  *
- * @author      Joress BADIENGUISSA
+ * @author      Clarette ATAGANA
  * @since       26-05-2019
  */
 public class AssetsLevelEditorComponent extends JPanel implements ActionListener {

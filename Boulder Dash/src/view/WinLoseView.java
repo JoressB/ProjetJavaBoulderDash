@@ -6,7 +6,11 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
 public class WinLoseView extends JFrame{
-	
+
+	/**
+	*@author Darline MODJO
+	*
+	*/
 	private String winOrLose;
 
 	/**

@@ -17,7 +17,7 @@ import java.util.Observer;
  *
  * Specifies the game view itself.
  *
- * @author      Joress BADIENGUISSA
+ * @author      Clarette ATAGANA
  * @since       26-05-2019
  */
 public class Game extends JFrame implements Observer {

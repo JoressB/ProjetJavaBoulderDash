@@ -17,7 +17,6 @@ import view.MenuView;
  * The game loop is also handled there.
  *
  * @author      Fredy MANFOUO 
- * @since       2019-06-19
  */
 public class GameController implements ActionListener {
 	private Level level;

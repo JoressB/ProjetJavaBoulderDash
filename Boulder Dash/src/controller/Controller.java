@@ -5,8 +5,10 @@ import contract.IController;
 import contract.IModel;
 import contract.IView;
 
+
 /**
  * The Class Controller.
+ * @author      Fredy MANFOUO
  */
 public final class Controller implements IController {
 

@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
  *
  * Specifies the menu level selector
  *
- * @author      Joress
+ *@author Darline MODJO
  * @since       2019-06-01
  */
 public class MenuLevelSelector extends JComboBox {

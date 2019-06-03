@@ -15,7 +15,7 @@ import java.awt.*;
  *
  * Game field view for the game itself.
  *
- * @author      Joress BADIENGUISSA
+ * @author      Clarette ATAGANA
  * @since       26-05-2019
  */
 public class GameGroundView extends GroundView {

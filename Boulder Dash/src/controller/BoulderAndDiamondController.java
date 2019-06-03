@@ -13,7 +13,6 @@ import model.Level;
  * their power to destroy in the food chain. Sorry for that Darwinism.
  *
  * @author Fredy MANFOUO
- * @since 2019-06-28
  */
 public class BoulderAndDiamondController implements Runnable {
 	private Level level;

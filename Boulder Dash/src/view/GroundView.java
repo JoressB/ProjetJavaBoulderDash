@@ -15,7 +15,7 @@ import java.util.Observer;
  * level observable; Because of the sprites we have to refresh the game
  * windows very often so don't need of observers/observable mechanism
  *
- * @author      Joress BADIENGUISSA
+ * @author      Clarette ATAGANA
  * @since       25-05-2019
  *
  *        This view is basically drawing into the Frame the level.

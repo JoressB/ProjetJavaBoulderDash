@@ -20,7 +20,7 @@ import java.util.Observer;
  *
  * Specifies the level editor view.
  *
- * @author      Fredy
+ * @author      Clarette ATAGANA
  * @since       2019-06-03
  */
 public class LevelEditor extends JFrame implements Observer {
