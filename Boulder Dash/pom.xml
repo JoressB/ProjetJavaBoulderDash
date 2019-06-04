@@ -14,6 +14,25 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-shade-plugin</artifactId>
+      	<version>3.0.0</version>
+      	<executions>
+      	<execution>
+      	<phase> package </phase>
+      	<goals>
+      	<goal>shade</goal></goals>
+ <configuration><transformers><transformer implementation="org.apache.maven.plugins.shade.resource.manifestResourceTransformer"> <mainClass>main.Main</mainClass></transformer> </transformers></configuration>
+      	</execution>
+      </executions>
+      </plugin>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>2.10.4</version>
+      <configuration><aggregate>true</aggregate><excludePackageNames>java.*:javax.*:org.*</excludePackageNames></configuration></plugin>
+      
     </plugins>
   </build>
 </project>

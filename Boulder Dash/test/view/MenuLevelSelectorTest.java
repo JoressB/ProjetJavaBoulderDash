@@ -40,11 +40,6 @@ public class MenuLevelSelectorTest {
 
 	@Test
 	public void testGetChoiceValue() {
-		 JComboBox comboBoxSource = (JComboBox) e.getSource();
-	        this.choiceValue = (String) comboBoxSource.getSelectedItem();
-
-	        if(this.levelEditor != null) {
-	            this.levelEditor.menuLevelSelectorChanged(this);
 	}
 
 	@Test
